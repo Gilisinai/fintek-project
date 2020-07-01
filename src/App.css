@@ -1,38 +1,240 @@
-.App {
+/* General */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin: 5px 0px;
+}
+
+.img {
+  max-width: 100%;
+}
+
+/* Layout */
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  width: 90%;
+  margin-left: 10%;
+  height: 90vh;
+}
+
+/* Utils */
+
+.light-text {
+  font-weight: 300;
+}
+
+.text-center {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mb-sm {
+margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.mb-md {
+  margin-bottom: 40px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.heading-primary {
+  font-size: 52px;
+  font-weight: 400;
+  line-height: 52px;
+}
+
+/* About */
+.about {
+  width: 40%;
+}
+
+.about-content {
+  width: 50%;
+}
+
+.description {
+  font-weight: 300;
+}
+/* Employees */
+
+.employees {
+  width: 60%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap; 
+}
+
+.employee {
+  width: 33.3%;
+}
+
+.employee-avatar {
+  max-height: 75%;
+  margin-bottom: 20px;
+}
+
+.employee-job {
+  color: #c2c2c2;
+  margin-top: auto;
+}
+
+.employee-desc {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  margin-top: auto;
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width : 1025px) {
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  /* General */
+  p {
+    margin: 5px 0px
   }
-  to {
-    transform: rotate(360deg);
+
+  /* Utils */
+  .heading-primary {
+    font-size: 43px;
+    font-weight: 400;
+    line-height: 42px;
+  }
+  
+  .regular-text {
+    font-size: 14px;
+  }
+  
+  .mb-sm {
+    margin-bottom: 5px;
+  }
+  
+  .mb-md {
+    margin-bottom: 20px;
+  }
+
+  /* About */
+  .about {
+    width: 50%;
+  }
+
+  .about-content {
+    width: 45%;
+  }
+
+  /* Employees */
+  
+  .employees {
+    width: 50%;
+  }
+
+  .employee {
+    margin-bottom: 10px;
+  }
+  .employee-avatar {
+    margin-bottom: 10px;
+  }
+
+
+  .employee-job {
+    font-size: 10px;
+  }
+
+  @media screen and (max-width : 792px) {
+
+    /* General */
+    p {
+      margin: 5px 0px
+    }
+
+    /* Layout */
+    .container {
+      flex-direction: column;
+      margin: 40px auto;
+      height: auto;
+    }
+
+    /* Utils */
+
+    .heading-wrapper.mb-md {
+      margin-bottom: 40px;
+    }
+
+    .heading-primary {
+      font-size: 43px;
+      font-weight: 400;
+      line-height: 47px;
+      text-align: center;
+    }
+
+    .regular-text {
+      font-size: 12px;
+    }
+    
+    /* About */
+
+    .about {
+      width: 100%;
+    }
+    .about-content {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    /* Employees */
+
+    .employees {
+      align-items: center;
+      width: 100%;
+    }
+
+    .employee {
+      margin-bottom: 20px;
+    }
+    .employee-avatar {
+      margin-bottom: 10px;
+    }
+
+    .employee-job {
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width : 478px) {
+    /* General */
+    p {
+      margin: 10px 0px
+    }
+
+    /* Utils */
+
+    .heading-primary {
+      font-size: 37px;
+      font-weight: 400;
+      line-height: 40px;
+      text-align: center;
+    }
+
+    .heading-wrapper.mb-md {
+      margin-bottom: 40px;
+    }
+
+    /* About */
+    .about {
+      margin-bottom: 0px;
+    }
+
+    /* Employees */
+    .employees {
+      align-items: center;
+    }
+
+    .employee {
+      margin-bottom: 15px;
+      width: 50%;
+    }
   }
 }
